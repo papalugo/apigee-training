@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HMAC name="HMAC-2">
+  <DisplayName>HMAC-2</DisplayName>
+  <Algorithm>SHA-256</Algorithm>
+  <Message ref="request.content">abc</Message>
+  <SecretKey ref="private.secretkey"/>
+  <VerificationValue encoding="base64" ref="request.header.hmac-value"/>
+</HMAC>

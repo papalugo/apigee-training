@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>Verify-API-Key-1</Name>
+            </Step>
+            <Step>
+                <Name>JavaScript-1</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>Assign-Message-1</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <Flows/>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/jscript3</BasePath>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>

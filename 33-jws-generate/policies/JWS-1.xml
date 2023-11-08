@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenerateJWS name="JWS-1">
+  <DisplayName>JWS-1</DisplayName>
+  <Algorithm>HS256</Algorithm>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <CriticalHeaders/>
+  <SecretKey>
+    <Value ref="private.secretkey"/>
+  </SecretKey>
+  <Payload ref="request.content"/>
+  <DetachContent>false</DetachContent>
+  <AdditionalHeaders>
+    <Claim name="issuedby" ref="request.header.user1">issuedby_variable</Claim>
+  </AdditionalHeaders>
+  <OutputVariable>jws-token-value</OutputVariable>
+</GenerateJWS>

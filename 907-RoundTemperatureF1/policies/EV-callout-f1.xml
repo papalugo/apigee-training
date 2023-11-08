@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="EV-callout-f1">
+  <DisplayName>EV-callout-f1</DisplayName>
+  <Properties/>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <VariablePrefix>apigee</VariablePrefix>
+  <Source clearPayload="false">calloutResponseF1</Source>
+  <XMLPayload stopPayloadProcessing="false">
+    <Namespaces>
+      <Namespace prefix="ns0">http://ergast.com/mrd/1.5</Namespace>
+    </Namespaces>
+    <Variable name="raceName" type="string">
+      <XPath>//ns0:RaceTable/ns0:Race/ns0:RaceName</XPath>
+    </Variable>
+    <Variable name="locality" type="string">
+      <XPath>//ns0:RaceTable/ns0:Race/ns0:Circuit/ns0:Location/ns0:Locality</XPath>
+    </Variable>
+    <Variable name="country" type="string">
+      <XPath>//ns0:RaceTable/ns0:Race/ns0:Circuit/ns0:Location/ns0:Country</XPath>
+    </Variable>
+    <Variable name="date" type="string">
+      <XPath>//ns0:RaceTable/ns0:Race/ns0:Date</XPath>
+    </Variable>
+    <Variable name="time" type="string">
+      <XPath>//ns0:RaceTable/ns0:Race/ns0:Time</XPath>
+    </Variable>
+    <Variable name="latitude" type="string">
+      <XPath>//ns0:RaceTable/ns0:Race/ns0:Circuit/ns0:Location/@lat</XPath>
+    </Variable>
+    <Variable name="longitude" type="string">
+      <XPath>//ns0:RaceTable/ns0:Race/ns0:Circuit/ns0:Location/@long</XPath>
+    </Variable>
+  </XMLPayload>
+</ExtractVariables>

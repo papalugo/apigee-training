@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout continueOnError="false" enabled="true" name="SC-get-f1-drivers">
+  <DisplayName>SC-get-f1-drivers</DisplayName>
+  <Properties/>
+  <Request clearPayload="true" variable="myRequest">
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  </Request>
+  <Response>coResponseDrivers</Response>
+  <HTTPTargetConnection>
+    <URL>http://ergast.com/api/f1/drivers</URL>
+  </HTTPTargetConnection>
+</ServiceCallout>

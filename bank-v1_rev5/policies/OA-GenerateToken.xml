@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OAuthV2 name="OA-GenerateToken">
+  <Operation>GenerateJWTAccessToken</Operation>
+  <Algorithm>HS256</Algorithm>
+  <SecretKey>
+    <Value ref="private.secretkey"/>
+  </SecretKey>
+  <SupportedGrantTypes>
+    <!-- pass client_id and client_secret via basic auth header -->
+    <GrantType>client_credentials</GrantType>
+  </SupportedGrantTypes>
+  <!-- 1800000 ms = 1800 s = 30 min -->
+  <ExpiresIn>1800000</ExpiresIn>
+  <GenerateResponse enabled="true"/>
+  <RFCCompliantRequestResponse>true</RFCCompliantRequestResponse>
+</OAuthV2>

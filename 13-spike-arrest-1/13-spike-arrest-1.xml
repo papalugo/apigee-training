@@ -1,0 +1,16 @@
+<APIProxy revision="1" name="13-spike-arrest-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742150575</CreatedAt>
+    <LastModifiedAt>1695742150575</LastModifiedAt>
+    <BasePaths>/spike-arrest-1</BasePaths>
+    <Policies>
+        <Policy>SA-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

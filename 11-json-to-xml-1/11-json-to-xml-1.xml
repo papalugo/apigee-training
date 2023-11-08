@@ -1,0 +1,18 @@
+<APIProxy revision="1" name="11-json-to-xml-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742108934</CreatedAt>
+    <LastModifiedAt>1695742108934</LastModifiedAt>
+    <BasePaths>/json-to-xml-1</BasePaths>
+    <Policies>
+        <Policy>remove_uripath</Policy>
+        <Policy>geturiparam</Policy>
+        <Policy>JSON-to-XML-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

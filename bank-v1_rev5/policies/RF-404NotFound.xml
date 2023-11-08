@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault name="RF-404NotFound">
+  <FaultResponse>
+    <Remove>
+      <Headers/>
+    </Remove>
+    <Set>
+      <StatusCode>404</StatusCode>
+      <ReasonPhrase>Not Found</ReasonPhrase>
+      <Headers>
+        <Header name="FaultName">{fault.name}</Header>
+      </Headers>
+      <Payload contentType="application/json">
+        {
+          "error": "{request.verb} {proxy.pathsuffix} not found"
+        }
+      </Payload>
+    </Set>
+  </FaultResponse>
+  <AssignTo createNew="true" type="response"/>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

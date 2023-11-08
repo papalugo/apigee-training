@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VerifyJWS name="JWS-1">
+  <DisplayName>JWS-1</DisplayName>
+  <Algorithm>HS256</Algorithm>
+  <SecretKey>
+    <Value ref="private.secretkey"/>
+  </SecretKey>
+  <Source>request.formparam.JWS</Source>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <KnownHeaders/>
+  <IgnoreCriticalHeaders/>
+</VerifyJWS>

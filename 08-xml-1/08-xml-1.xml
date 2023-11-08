@@ -1,0 +1,14 @@
+<APIProxy revision="1" name="08-xml-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695741124076</CreatedAt>
+    <LastModifiedAt>1695741124076</LastModifiedAt>
+    <BasePaths>/xml-1</BasePaths>
+    <Policies>
+        <Policy>Extract-Variables-1</Policy>
+        <Policy>Assign-Message-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

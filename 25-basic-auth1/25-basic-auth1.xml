@@ -1,0 +1,16 @@
+<APIProxy revision="1" name="25-basic-auth1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695802201949</CreatedAt>
+    <LastModifiedAt>1695802201949</LastModifiedAt>
+    <BasePaths>/basic-auth-1</BasePaths>
+    <Policies>
+        <Policy>Basic-Authentication-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

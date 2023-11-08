@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-Cache-response">
+  <DisplayName>AM-Cache-response</DisplayName>
+  <Source clearPayload="false">cache.message.content</Source>
+  <Set>
+    <Verb>GET</Verb>
+    <Payload contentType="application/json">
+            {cache.message.content}
+        </Payload>
+    <Path/>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

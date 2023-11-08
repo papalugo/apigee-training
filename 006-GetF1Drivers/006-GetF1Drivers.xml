@@ -1,0 +1,15 @@
+<APIProxy revision="3" name="006-GetF1Drivers">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1697816220520</CreatedAt>
+    <LastModifiedAt>1697816220520</LastModifiedAt>
+    <BasePaths>/f1/v1/006-get-f1-drivers</BasePaths>
+    <Policies>
+        <Policy>KVM-get-f1-drivers</Policy>
+        <Policy>AM-response</Policy>
+        <Policy>ML-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

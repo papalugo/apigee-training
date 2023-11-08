@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XMLToJSON continueOnError="false" enabled="true" name="XML-to-JSON-1">
+    <DisplayName>XML to JSON-1</DisplayName>
+    <Properties/>
+    <Options>
+        <RecognizeNumber>true</RecognizeNumber>
+        <RecognizeBoolean>true</RecognizeBoolean>
+        <RecognizeNull>true</RecognizeNull>
+        <NullValue>blank</NullValue>
+        <NamespaceBlockName>#namespaces</NamespaceBlockName>
+        <DefaultNamespaceNodeName>$</DefaultNamespaceNodeName>
+        <NamespaceSeparator>:</NamespaceSeparator>
+        <TextAlwaysAsProperty/>
+        <TextNodeName/>
+        <AttributeBlockName>attr_block</AttributeBlockName>
+        <AttributePrefix>atr_</AttributePrefix>
+        <OutputPrefix>pre_</OutputPrefix>
+        <OutputSuffix>_suf</OutputSuffix>
+        <StripLevels>1</StripLevels>
+    </Options>
+    <OutputVariable>request</OutputVariable>
+    <Source>request</Source>
+</XMLToJSON>

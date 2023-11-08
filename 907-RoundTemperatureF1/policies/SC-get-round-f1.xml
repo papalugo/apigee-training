@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout continueOnError="false" enabled="true" name="SC-get-round-f1" async="false">
+  <DisplayName>SC-get-round-f1</DisplayName>
+  <Properties/>
+  <!--<Request clearPayload="true" variable="calloutRequestF1">-->
+  <!--    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>-->
+  <!--</Request>-->
+  <Response>calloutResponseF1</Response>
+  <Timeout>10000</Timeout>
+  <HTTPTargetConnection>
+    <Properties/>
+    <URL>http://ergast.com/api/f1/{apigee.year}/{apigee.round}/laps/{apigee.lapnumber}</URL>
+  </HTTPTargetConnection>
+</ServiceCallout>

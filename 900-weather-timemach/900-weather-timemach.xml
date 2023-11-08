@@ -1,0 +1,20 @@
+<APIProxy revision="11" name="900-weather-timemach">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695978599886</CreatedAt>
+    <LastModifiedAt>1695978599886</LastModifiedAt>
+    <BasePaths>/weather-timemach</BasePaths>
+    <Policies>
+        <Policy>ev-apikey</Policy>
+        <Policy>js-location</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://resource-wit</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

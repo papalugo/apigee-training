@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="EV-xml-temp-converter">
+  <DisplayName>EV-xml-temp-converter</DisplayName>
+  <Properties/>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <Source clearPayload="false">calloutResponseTempConverter</Source>
+  <VariablePrefix>apigee</VariablePrefix>
+  <XMLPayload stopPayloadProcessing="false">
+    <Namespaces>
+      <Namespace prefix="ns0">https://www.w3schools.com/xml/</Namespace>
+    </Namespaces>
+    <Variable name="tempFahrenheit" type="string">
+      <!--<XPath>//ns0:Body/ns0:CelsiusToFahrenheitResponse/ns0:CelsiusToFahrenheitResult</XPath>-->
+      <XPath>//ns0:CelsiusToFahrenheitResult</XPath>
+    </Variable>
+  </XMLPayload>
+</ExtractVariables>

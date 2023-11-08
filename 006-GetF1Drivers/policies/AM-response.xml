@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-response">
+  <DisplayName>AM-response</DisplayName>
+  <Set>
+    <Headers/>
+    <QueryParams/>
+    <FormParams/>
+    <Verb>GET</Verb>
+    <Payload contentType="application/json">
+      {f1Drivers}
+    </Payload>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

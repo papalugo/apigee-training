@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+  <Description/>
+  <FaultRules/>
+  <PreFlow name="PreFlow">
+    <Request>
+      <Step>
+        <Name>AM-1</Name>
+      </Step>
+      <Step>
+        <Name>HMAC-2</Name>
+      </Step>
+    </Request>
+    <Response/>
+  </PreFlow>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response>
+      <Step>
+        <Condition>HMAC.fail = ''</Condition>
+        <Name>AM-3</Name>
+      </Step>
+    </Response>
+  </PostFlow>
+  <Flows/>
+  <HTTPProxyConnection>
+    <BasePath>/hmac-verify</BasePath>
+    <Properties/>
+    <VirtualHost>default</VirtualHost>
+  </HTTPProxyConnection>
+  <RouteRule name="default"/>
+</ProxyEndpoint>

@@ -1,0 +1,22 @@
+<APIProxy revision="28" name="005-SetF1Drivers">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1697808251833</CreatedAt>
+    <LastModifiedAt>1697808251833</LastModifiedAt>
+    <BasePaths>/f1/v1/005-setf1drivers</BasePaths>
+    <Policies>
+        <Policy>SC-get-f1-drivers</Policy>
+        <Policy>XMLtoJSON-Drivers</Policy>
+        <Policy>AM-response-drivers</Policy>
+        <Policy>KVM-set-f1-drivers</Policy>
+        <Policy>KVM-get-f1-drivers</Policy>
+        <Policy>EV-dirvers-only</Policy>
+        <Policy>JS-json-parse</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JSUtils.js</Resource>
+    </Resources>
+</APIProxy>

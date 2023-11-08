@@ -1,0 +1,20 @@
+<APIProxy revision="1" name="apiproxy-kvm-maintenance">
+    <DisplayName>kvm-maintenance</DisplayName>
+    <Description></Description>
+    <CreatedAt>1697623005547</CreatedAt>
+    <LastModifiedAt>1697623005547</LastModifiedAt>
+    <BasePaths>/kvm-maintenance</BasePaths>
+    <Policies>
+        <Policy>RF-InvalidRequest</Policy>
+        <Policy>AV-Mapname</Policy>
+        <Policy>KVM-Get</Policy>
+        <Policy>KVM-Put</Policy>
+        <Policy>AM-InjectProxyVersionHeader</Policy>
+        <Policy>AM-PutResponse</Policy>
+        <Policy>RF-UnknownRequest</Policy>
+        <Policy>AM-GetResponse</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>endpoint1</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

@@ -1,0 +1,18 @@
+<APIProxy revision="1" name="24-jscript3">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695802183247</CreatedAt>
+    <LastModifiedAt>1695802183247</LastModifiedAt>
+    <BasePaths>/jscript3</BasePaths>
+    <Policies>
+        <Policy>JavaScript-1</Policy>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>Verify-API-Key-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://Resource-1.js</Resource>
+    </Resources>
+</APIProxy>

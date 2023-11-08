@@ -1,0 +1,19 @@
+<APIProxy revision="1" name="22-Jscript1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695802145633</CreatedAt>
+    <LastModifiedAt>1695802145633</LastModifiedAt>
+    <BasePaths>/jscript1</BasePaths>
+    <Policies>
+        <Policy>JavaScript-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JavaScript-1.js</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

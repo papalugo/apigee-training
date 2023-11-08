@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="getuiparam">
+    <DisplayName>geturiparam</DisplayName>
+    <Properties/>
+    <URIPath name="name"/>
+    <Pattern>/getCustomerById/{id}</Pattern>
+    <QueryParam name="name"/>
+    <Header name="name"/>
+    <FormParam name="name"/>
+    <Variable name="name"/>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="name">
+            <JSONPath>{example}</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">request</Source>
+    <VariablePrefix>uriparamvalue</VariablePrefix>
+    <XMLPayload stopPayloadProcessing="false">
+        <Namespaces/>
+        <Variable name="name" type="boolean">
+            <XPath>//test/example</XPath>
+        </Variable>
+    </XMLPayload>
+</ExtractVariables>

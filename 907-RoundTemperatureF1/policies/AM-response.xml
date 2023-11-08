@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-response">
+  <DisplayName>AM-response</DisplayName>
+  <Set>
+    <Verb>GET</Verb>
+    <Payload contentType="application/json">
+            {
+            	"raceName": "{apigee.raceName}",
+            	"locality": "{apigee.locality}",
+            	"country": "{apigee.country}",
+            	"datetime": "{apigee.datetime}",
+            	"lap": {apigee.lapnumber},
+            	"temperatureUnit": "{apigee.temperatureUnit}",
+            	"temperature": {apigee.temperature},
+            	"latitude": {apigee.latitude},
+            	"longitude": {apigee.longitude},
+            	"tempFahrenheit": {apigee.tempFahrenheit}
+            }
+        </Payload>
+    <Path/>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

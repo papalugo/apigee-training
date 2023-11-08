@@ -1,0 +1,15 @@
+<APIProxy revision="3" name="34-jws-verify">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695819369113</CreatedAt>
+    <LastModifiedAt>1695819369113</LastModifiedAt>
+    <BasePaths>/jws-verify</BasePaths>
+    <Policies>
+        <Policy>JWS-1</Policy>
+        <Policy>AM-1</Policy>
+        <Policy>AM-2</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

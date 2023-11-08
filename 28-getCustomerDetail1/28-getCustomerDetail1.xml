@@ -1,0 +1,18 @@
+<APIProxy revision="1" name="28-getCustomerDetail1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695802270448</CreatedAt>
+    <LastModifiedAt>1695802270448</LastModifiedAt>
+    <BasePaths>/getcustomerdetail1</BasePaths>
+    <Policies>
+        <Policy>verify-oauth-v2-access-token</Policy>
+        <Policy>remove-header-authoriazation</Policy>
+        <Policy>extractid</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

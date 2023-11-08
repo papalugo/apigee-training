@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+  <Description/>
+  <FaultRules/>
+  <PreFlow name="PreFlow">
+    <Request>
+      <Step>
+        <Name>AM-1</Name>
+      </Step>
+      <Step>
+        <Name>JWS-1</Name>
+      </Step>
+    </Request>
+    <Response/>
+  </PreFlow>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response>
+      <Step>
+        <Name>AM-2</Name>
+      </Step>
+    </Response>
+  </PostFlow>
+  <Flows/>
+  <HTTPProxyConnection>
+    <BasePath>/jws-verify</BasePath>
+    <Properties/>
+    <VirtualHost>default</VirtualHost>
+  </HTTPProxyConnection>
+  <RouteRule name="default"/>
+</ProxyEndpoint>

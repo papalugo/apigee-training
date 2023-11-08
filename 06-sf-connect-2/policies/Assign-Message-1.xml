@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="Assign-Message-1">
+    <DisplayName>Assign Message-1</DisplayName>
+    <Properties/>
+    <Copy source="request">
+        <Headers/>
+        <QueryParams/>
+        <FormParams/>
+        <Payload/>
+        <Verb/>
+        <StatusCode/>
+        <ReasonPhrase/>
+        <Path/>
+    </Copy>
+    <Add>
+        <Headers/>
+        <QueryParams/>
+        <FormParams>
+            <FormParam name="grant_type">{request.queryparam.grant_type}</FormParam>
+            <FormParam name="client_id">{request.queryparam.client_id}</FormParam>
+            <FormParam name="client_secret">{request.queryparam.client_secret}</FormParam>
+            <FormParam name="username">{request.queryparam.username}</FormParam>
+            <FormParam name="password">{request.queryparam.password}</FormParam>
+        </FormParams>
+    </Add>
+    <Remove>
+        <Headers>
+            <Header name="h1"/>
+        </Headers>
+        <QueryParams>
+            <QueryParam name="grant_type"/>
+            <QueryParam name="client_id"/>
+            <QueryParam name="client_secret"/>
+            <QueryParam name="username"/>
+            <QueryParam name="password"/>
+        </QueryParams>
+        <FormParams>
+            <FormParam name="f1"/>
+        </FormParams>
+        <Payload/>
+    </Remove>
+    <Set>
+        <Headers/>
+        <QueryParams/>
+        <FormParams/>
+        <Verb>POST</Verb>
+        <Path/>
+    </Set>
+    <AssignVariable>
+        <Name>name</Name>
+        <Value/>
+        <Ref/>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

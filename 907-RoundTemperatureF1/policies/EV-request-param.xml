@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="EV-request-param">
+  <DisplayName>EV-request-param</DisplayName>
+  <Properties/>
+  <URIPath name="year">
+    <Pattern>/roundTemperatureF1/{year}/{round}/{lapnumber}</Pattern>
+  </URIPath>
+  <URIPath name="round">
+    <Pattern>/roundTemperatureF1/{year}/{round}/{lapnumber}</Pattern>
+  </URIPath>
+  <URIPath name="lapnumber">
+    <Pattern>/roundTemperatureF1/{year}/{round}/{lapnumber}</Pattern>
+  </URIPath>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <VariablePrefix>apigee</VariablePrefix>
+</ExtractVariables>

@@ -1,0 +1,16 @@
+<APIProxy revision="1" name="12-xslt-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742129313</CreatedAt>
+    <LastModifiedAt>1695742129313</LastModifiedAt>
+    <BasePaths>/xslt-1</BasePaths>
+    <Policies>
+        <Policy>xsl-toxml</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>xsl://xsl_for_each.xsl</Resource>
+    </Resources>
+</APIProxy>

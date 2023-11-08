@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations continueOnError="false" enabled="true" name="KVM-PUT-F1" mapIdentifier="KvmF1">
+  <DisplayName>KVM-PUT-F1</DisplayName>
+  <ExclusiveCache>false</ExclusiveCache>
+  <ExpiryTimeInSecs>300</ExpiryTimeInSecs>
+  <Put override="true">
+    <Key>
+      <Parameter>postman-apikey</Parameter>
+    </Key>
+    <Value ref="request.header.postman-apikey"/>
+  </Put>
+  <Scope>environment</Scope>
+</KeyValueMapOperations>

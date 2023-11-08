@@ -1,0 +1,14 @@
+<APIProxy revision="1" name="16-proxy2-loopback">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742252594</CreatedAt>
+    <LastModifiedAt>1695742252594</LastModifiedAt>
+    <BasePaths>/proxy2-loopback</BasePaths>
+    <Policies>
+        <Policy>Flow-Callout-1</Policy>
+        <Policy>Flow-Callout-2</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

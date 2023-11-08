@@ -1,0 +1,13 @@
+<APIProxy revision="4" name="27-auth-token-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1696250489412</CreatedAt>
+    <LastModifiedAt>1696250489412</LastModifiedAt>
+    <BasePaths>/oauth-token-1</BasePaths>
+    <Policies>
+        <Policy>OAuthV2-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

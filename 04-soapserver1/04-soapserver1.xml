@@ -1,0 +1,18 @@
+<APIProxy revision="1" name="04-soapserver1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695741042899</CreatedAt>
+    <LastModifiedAt>1695741042899</LastModifiedAt>
+    <BasePaths>/soapservice1</BasePaths>
+    <Policies>
+        <Policy>extractURIValue</Policy>
+        <Policy>constructSOAPMessage</Policy>
+        <Policy>removepathSuffix</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

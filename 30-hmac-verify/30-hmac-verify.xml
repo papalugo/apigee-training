@@ -1,0 +1,15 @@
+<APIProxy revision="2" name="30-hmac-verify">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695806934865</CreatedAt>
+    <LastModifiedAt>1695807238765</LastModifiedAt>
+    <BasePaths>/hmac-verify</BasePaths>
+    <Policies>
+        <Policy>HMAC-2</Policy>
+        <Policy>AM-1</Policy>
+        <Policy>AM-3</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

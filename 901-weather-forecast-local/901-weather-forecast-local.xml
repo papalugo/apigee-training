@@ -1,0 +1,18 @@
+<APIProxy revision="15" name="901-weather-forecast-local">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1696004494151</CreatedAt>
+    <LastModifiedAt>1696004494151</LastModifiedAt>
+    <BasePaths>/weather-forecast</BasePaths>
+    <Policies>
+        <Policy>ev-request</Policy>
+        <Policy>AM-1</Policy>
+        <Policy>EV-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

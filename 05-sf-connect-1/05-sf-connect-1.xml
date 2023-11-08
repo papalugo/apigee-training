@@ -1,0 +1,16 @@
+<APIProxy revision="1" name="05-sf-connect-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695741064774</CreatedAt>
+    <LastModifiedAt>1695741064774</LastModifiedAt>
+    <BasePaths>/sf-connect-1</BasePaths>
+    <Policies>
+        <Policy>Assign-Message-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

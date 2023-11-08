@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+  <PreFlow name="PreFlow">
+    <Request>
+      <Step>
+        <Name>SA-LimitRateByApp</Name>
+      </Step>
+    </Request>
+    <Response/>
+  </PreFlow>
+  <Flows>
+    <Flow name="getCustomers">
+      <Description>get all customers</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/customers") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="createCustomer">
+      <Description>create a customer</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/customers") and (request.verb = "POST")</Condition>
+    </Flow>
+    <Flow name="getCustomer">
+      <Description>get a specific customer</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/customers/*") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="updateCustomer">
+      <Description>update a specific customer</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/customers/*") and (request.verb = "PUT")</Condition>
+    </Flow>
+    <Flow name="getAccountsForCustomer">
+      <Description>get all accounts for a customer</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/customers/*/accounts") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="createAccountForCustomer">
+      <Description>create an account for a customer</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/customers/*/accounts") and (request.verb = "POST")</Condition>
+    </Flow>
+    <Flow name="getAccountForCustomer">
+      <Description>get a specific account for a customer</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/customers/*/accounts/*") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="getAtms">
+      <Description>get all ATMs</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/atms") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="createAtm">
+      <Description>create a new ATM</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/atms") and (request.verb = "POST")</Condition>
+    </Flow>
+    <Flow name="getAtm">
+      <Description>get a specific ATM</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/atms/*") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="updateAtm">
+      <Description>update a specific ATM</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/atms/*") and (request.verb = "PUT")</Condition>
+    </Flow>
+    <Flow name="getTransactions">
+      <Description>get all transactions</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/transactions") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="createTransation">
+      <Description>create a new transaction</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/transactions") and (request.verb = "POST")</Condition>
+    </Flow>
+    <Flow name="getTransaction">
+      <Description>get a specific transaction</Description>
+      <Request/>
+      <Response/>
+      <Condition>(proxy.pathsuffix MatchesPath "/transactions/*") and (request.verb = "GET")</Condition>
+    </Flow>
+    <Flow name="404NotFound">
+      <Description/>
+      <Request>
+        <Step>
+          <Name>RF-404NotFound</Name>
+        </Step>
+      </Request>
+      <Response/>
+    </Flow>
+  </Flows>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPProxyConnection>
+    <BasePath>/bank/v1</BasePath>
+  </HTTPProxyConnection>
+  <RouteRule name="default">
+    <TargetEndpoint>default</TargetEndpoint>
+  </RouteRule>
+</ProxyEndpoint>

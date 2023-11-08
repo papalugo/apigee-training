@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-1">
+  <DisplayName>AM-1</DisplayName>
+  <Properties/>
+  <AssignVariable>
+    <Name>private.key</Name>
+    <Ref>request.queryparam.key1</Ref>
+  </AssignVariable>
+  <Remove>
+    <QueryParams>
+      <QueryParam name="key1"/>
+    </QueryParams>
+  </Remove>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

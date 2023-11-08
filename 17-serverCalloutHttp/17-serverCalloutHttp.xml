@@ -1,0 +1,13 @@
+<APIProxy revision="1" name="17-serverCalloutHttp">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742273613</CreatedAt>
+    <LastModifiedAt>1695742273613</LastModifiedAt>
+    <BasePaths>/servicecallouthttp</BasePaths>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

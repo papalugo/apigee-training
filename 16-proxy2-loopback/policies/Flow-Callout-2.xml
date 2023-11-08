@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowCallout continueOnError="false" enabled="true" name="Flow-Callout-2">
+    <DisplayName>Flow Callout-2</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <SharedFlowBundle>json-to-xml-shared-flow-request</SharedFlowBundle>
+</FlowCallout>

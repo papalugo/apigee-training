@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<JavaCallout continueOnError="false" enabled="true" name="Java-Callout-1">
+    <DisplayName>Java Callout-1</DisplayName>
+    <Properties/>
+    <ClassName>com.wit.apigee.tools.JavaError</ClassName>
+    <ResourceURL>java://wit-apigee-tools.jar</ResourceURL>
+</JavaCallout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-response-drivers">
+    <DisplayName>AM-response-drivers</DisplayName>
+    <Set>
+        <Verb>GET</Verb>
+        <Payload contentType="application/json">
+            {jsonDrivers}
+        </Payload>
+    </Set>
+</AssignMessage>

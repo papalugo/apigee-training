@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging continueOnError="false" enabled="true" name="Message-Logging-1">
+  <DisplayName>Message Logging-1</DisplayName>
+  <Syslog>
+    <Message>{cache.message.content}</Message>
+    <Host>localhost</Host>
+    <Port>514</Port>
+  </Syslog>
+</MessageLogging>

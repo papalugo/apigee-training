@@ -1,0 +1,19 @@
+<APIProxy revision="1" name="retail-v1">
+    <DisplayName></DisplayName>
+    <Description>My retail API</Description>
+    <CreatedAt>1696424909695</CreatedAt>
+    <LastModifiedAt>1696424909695</LastModifiedAt>
+    <BasePaths>/retail/v1</BasePaths>
+    <Policies>
+        <Policy>VAK-VerifyKey</Policy>
+        <Policy>O2-VerifyToken</Policy>
+        <Policy>AM-RemoveAuth</Policy>
+        <Policy>JTP-Protect</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

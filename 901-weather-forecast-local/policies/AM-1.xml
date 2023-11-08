@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-1">
+  <DisplayName>AM-1</DisplayName>
+  <Properties/>
+  <Set>
+    <Verb>POST</Verb>
+    <Payload contentType="application/json">
+      {
+        "data": "{apigee.dt}",
+        "temperatura": "{apigee.main.temp}",
+        "precipitação": "{apigee.weather.description}",
+        "vento": "{apigee.wind.speed}""
+      }
+    </Payload>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

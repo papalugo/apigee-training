@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging continueOnError="false" enabled="true" name="ML-1">
+  <DisplayName>ML-1</DisplayName>
+  <Syslog>
+    <Message>[3f509b58 tag="{organization.name}.{apiproxy.name}.{environment.name}"] Weather request for WOEID {request.queryparam.w}.</Message>
+    <Host>logs-01.loggly.com</Host>
+    <Port>514</Port>
+    <Protocol>TCP</Protocol>
+  </Syslog>
+</MessageLogging>

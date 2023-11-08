@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="create-fault-response">
+  <DisplayName>create-fault-response</DisplayName>
+  <Properties/>
+  <Set>
+    <StatusCode>401</StatusCode>
+    <ReasonPhrase>Unauthorized</ReasonPhrase>
+    <Payload contentType="application/json">{calloutResponseF1.content}</Payload>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

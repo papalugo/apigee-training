@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XSL continueOnError="false" enabled="true" name="xsl-toxml">
+    <DisplayName>xsl-toxml</DisplayName>
+    <Properties/>
+    <Source>request</Source>
+    <ResourceURL>xsl://xsl_for_each.xsl</ResourceURL>
+    <Parameters ignoreUnresolvedVariables="true" />
+    <OutputVariable></OutputVariable>
+</XSL>

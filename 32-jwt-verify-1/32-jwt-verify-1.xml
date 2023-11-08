@@ -1,0 +1,15 @@
+<APIProxy revision="2" name="32-jwt-verify-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695810942630</CreatedAt>
+    <LastModifiedAt>1695811065532</LastModifiedAt>
+    <BasePaths>/jwt-verify-1</BasePaths>
+    <Policies>
+        <Policy>JWT-1</Policy>
+        <Policy>AM-1</Policy>
+        <Policy>AM-2</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

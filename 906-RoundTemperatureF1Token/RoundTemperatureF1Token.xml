@@ -1,0 +1,13 @@
+<APIProxy revision="2" name="RoundTemperatureF1Token">
+    <DisplayName>RoundTemperatureF1</DisplayName>
+    <Description>RoundTemperatureF1</Description>
+    <CreatedAt>1697705889515</CreatedAt>
+    <LastModifiedAt>1697705889515</LastModifiedAt>
+    <BasePaths>/f1/v1/getToken</BasePaths>
+    <Policies>
+        <Policy>OAuthV2-generate-token</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

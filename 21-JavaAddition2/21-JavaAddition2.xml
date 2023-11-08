@@ -1,0 +1,23 @@
+<APIProxy revision="1" name="21-JavaAddition2">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695802123310</CreatedAt>
+    <LastModifiedAt>1695802123310</LastModifiedAt>
+    <BasePaths>/javaaddition2</BasePaths>
+    <Policies>
+        <Policy>Java-Callout-1</Policy>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>Extract-Variables-1</Policy>
+        <Policy>Assign-Message-2</Policy>
+        <Policy>Extract-Variables-2</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>java://wit-apigee-tools.jar</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

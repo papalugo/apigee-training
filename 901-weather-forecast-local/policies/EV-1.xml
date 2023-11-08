@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="EV-1">
+  <DisplayName>EV-2</DisplayName>
+  <Source>response</Source>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <JSONPayload>
+    <Variable name="dt">
+      <JSONPath>$.dt</JSONPath>
+    </Variable>
+    <Variable name="main.temp">
+      <JSONPath>$.main.temp</JSONPath>
+    </Variable>
+    <Variable name="weather.description">
+      <JSONPath>$.weather[0].description</JSONPath>
+    </Variable>
+    <Variable name="wind.speed">
+      <JSONPath>$.wind.speed</JSONPath>
+    </Variable>
+  </JSONPayload>
+  <VariablePrefix>apigee</VariablePrefix>
+</ExtractVariables>

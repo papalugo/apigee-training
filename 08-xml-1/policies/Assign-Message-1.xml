@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="Assign-Message-1">
+    <DisplayName>Assign Message-1</DisplayName>
+    <Properties/>
+    <Copy source="request">
+        <Headers/>
+        <QueryParams/>
+        <FormParams/>
+        <Payload/>
+        <Verb/>
+        <StatusCode/>
+        <ReasonPhrase/>
+        <Path/>
+    </Copy>
+    <Remove>
+        <Headers>
+            <Header name="h1"/>
+        </Headers>
+        <QueryParams>
+            <QueryParam name="q1"/>
+        </QueryParams>
+        <FormParams>
+            <FormParam name="f1"/>
+        </FormParams>
+        <Payload/>
+    </Remove>
+    <Add>
+        <Headers/>
+        <QueryParams/>
+        <FormParams/>
+    </Add>
+    <Set>
+        <Headers/>
+        <QueryParams/>
+        <FormParams/>
+        <Verb>POST</Verb>
+        <Payload contentType="application/json">
+             {
+                "id1": "{apigee.id1}",
+                "id2": "{apigee.id2}",
+                "id3": "{apigee.id3}",
+                "id4": "{apigee.id4}"
+             }
+         </Payload>
+        <Path/>
+    </Set>
+    <AssignVariable>
+        <Name>name</Name>
+        <Value/>
+        <Ref/>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

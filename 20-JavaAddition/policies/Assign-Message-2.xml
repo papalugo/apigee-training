@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="Assign-Message-2">
+    <DisplayName>Assign Message-2</DisplayName>
+    <Properties/>
+    <Copy source="request">
+        <Headers/>
+        <QueryParams/>
+        <FormParams/>
+        <Payload/>
+        <Verb/>
+        <StatusCode/>
+        <ReasonPhrase/>
+        <Path/>
+    </Copy>
+    <Remove>
+        <Headers>
+            <Header name="h1"/>
+        </Headers>
+        <QueryParams>
+            <QueryParam name="q1"/>
+        </QueryParams>
+        <FormParams>
+            <FormParam name="f1"/>
+        </FormParams>
+        <Payload/>
+    </Remove>
+    <Add>
+        <QueryParams/>
+        <FormParams/>
+    </Add>
+    <Set>
+        <Headers/>
+        <QueryParams/>
+        <FormParams/>
+        <Verb>GET</Verb>
+        <Payload contentType="application/json">
+            {
+                "total": {apigee.total}
+            }
+        </Payload>
+        <Path/>
+    </Set>
+    <AssignVariable>
+        <Name>name</Name>
+        <Value/>
+        <Ref/>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

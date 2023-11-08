@@ -1,0 +1,13 @@
+<APIProxy revision="2" name="35-xml-protection">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695824173042</CreatedAt>
+    <LastModifiedAt>1695824173042</LastModifiedAt>
+    <BasePaths>/xml-protection</BasePaths>
+    <Policies>
+        <Policy>XMLTP-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

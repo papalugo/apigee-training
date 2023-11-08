@@ -1,0 +1,34 @@
+<APIProxy revision="5" name="RoundTemperatureF1">
+    <DisplayName>RoundTemperatureF1</DisplayName>
+    <Description>RoundTemperatureF1</Description>
+    <CreatedAt>1698224814691</CreatedAt>
+    <LastModifiedAt>1698224814691</LastModifiedAt>
+    <BasePaths>/f1/v1</BasePaths>
+    <Policies>
+        <Policy>EV-request-param</Policy>
+        <Policy>SC-get-round-f1</Policy>
+        <Policy>EV-callout-f1</Policy>
+        <Policy>SC-get-temperature</Policy>
+        <Policy>JS-build-response</Policy>
+        <Policy>AM-response</Policy>
+        <Policy>create-fault-response</Policy>
+        <Policy>SA-1</Policy>
+        <Policy>AM-Cache-response</Policy>
+        <Policy>F1TemperatureLookupCache</Policy>
+        <Policy>F1TemperaturePopulateCache</Policy>
+        <Policy>KVM-PUT-F1</Policy>
+        <Policy>KVM-GET-F1</Policy>
+        <Policy>AM-delete-postman-apikey</Policy>
+        <Policy>Quota-f1</Policy>
+        <Policy>SC-temperature-converter</Policy>
+        <Policy>EV-xml-temp-converter</Policy>
+        <Policy>Message-Logging-1</Policy>
+        <Policy>OAuth-v20</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JS-build-response.js</Resource>
+    </Resources>
+</APIProxy>

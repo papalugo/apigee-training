@@ -1,0 +1,13 @@
+<APIProxy revision="1" name="03-loopbackservice1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695741020673</CreatedAt>
+    <LastModifiedAt>1695741020673</LastModifiedAt>
+    <BasePaths>/v2</BasePaths>
+    <Policies>
+        <Policy>createJsonMessage</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

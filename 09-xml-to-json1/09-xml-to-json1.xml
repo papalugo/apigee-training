@@ -1,0 +1,14 @@
+<APIProxy revision="1" name="09-xml-to-json1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695741147305</CreatedAt>
+    <LastModifiedAt>1695741147305</LastModifiedAt>
+    <BasePaths>/xml-to-json1</BasePaths>
+    <Policies>
+        <Policy>XML-to-JSON-1</Policy>
+        <Policy>XML-to-JSON-2</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

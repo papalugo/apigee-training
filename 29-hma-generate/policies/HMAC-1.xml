@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HMAC name="HMAC-1">
+  <DisplayName>HMAC-1</DisplayName>
+  <Algorithm>SHA-256</Algorithm>
+  <Message ref="request.content"/>
+  <SecretKey ref="private.secretkey"/>
+  <Output>hmac_value</Output>
+</HMAC>

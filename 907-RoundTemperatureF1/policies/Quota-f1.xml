@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quota continueOnError="false" enabled="true" name="Quota-f1">
+    <DisplayName>Quota-f1</DisplayName>
+    <Allow count="10000" countRef="request.header.allowed_quota"/>
+    <Interval>1</Interval>
+    <Distributed>false</Distributed>
+    <Synchronous>true</Synchronous>
+    <TimeUnit ref="request.header.quota_timeout">hour</TimeUnit>
+</Quota>

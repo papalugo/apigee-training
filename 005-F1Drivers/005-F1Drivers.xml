@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="005-F1Drivers">
+  <DisplayName/>
+  <Description/>
+  <CreatedAt>1697792248409</CreatedAt>
+  <LastModifiedAt>1697792388600</LastModifiedAt>
+  <BasePaths>/005-f1-drivers</BasePaths>
+  <Policies>
+    <Policy>SC-get-drivers</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+</APIProxy>

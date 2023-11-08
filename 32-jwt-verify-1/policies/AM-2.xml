@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-2">
+  <DisplayName>AM-2</DisplayName>
+  <Properties/>
+  <Set>
+    <Headers/>
+    <QueryParams/>
+    <FormParams/>
+    <Verb>POST</Verb>
+    <Payload contentType="application/json">
+      {
+        "status": "JWT validation successful..",
+        "jwt_token": "{jwt-token-value}"
+      }
+    </Payload>
+    <Path/>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

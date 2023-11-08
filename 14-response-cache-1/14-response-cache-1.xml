@@ -1,0 +1,16 @@
+<APIProxy revision="1" name="14-response-cache-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742174595</CreatedAt>
+    <LastModifiedAt>1695742174595</LastModifiedAt>
+    <BasePaths>/response-cache-1</BasePaths>
+    <Policies>
+        <Policy>RC-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

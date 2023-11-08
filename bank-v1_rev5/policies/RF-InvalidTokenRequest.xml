@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault name="RF-InvalidTokenRequest">
+  <FaultResponse>
+    <Set>
+      <StatusCode>400</StatusCode>
+      <ReasonPhrase>Bad Request</ReasonPhrase>
+      <Payload contentType="application/json">
+        {
+          "error":"Bad request: use POST /token"
+        }
+      </Payload>
+    </Set>
+  </FaultResponse>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

@@ -1,0 +1,19 @@
+<APIProxy revision="1" name="oauth-v1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1696425122882</CreatedAt>
+    <LastModifiedAt>1696425122882</LastModifiedAt>
+    <BasePaths>/oauth/v1</BasePaths>
+    <Policies>
+        <Policy>OA2-Generate-Token-CC-Form</Policy>
+        <Policy>SA-Auth-Traffic-Smoother</Policy>
+        <Policy>AM-Assign-404-Error-Variables</Policy>
+        <Policy>RF-Empty-Fault</Policy>
+        <Policy>AM-Set-Default-Error-Response</Policy>
+        <Policy>AM-Access-Token-Response-CC-Form</Policy>
+        <Policy>AM-Assign-401-Error-Variables</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

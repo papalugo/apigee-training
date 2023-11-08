@@ -1,0 +1,15 @@
+<APIProxy revision="2" name="33-jws-generate">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695820848960</CreatedAt>
+    <LastModifiedAt>1695820848960</LastModifiedAt>
+    <BasePaths>/jws-generate</BasePaths>
+    <Policies>
+        <Policy>AM-1</Policy>
+        <Policy>AM-2</Policy>
+        <Policy>JWS-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="SC-temperature-converter">
+  <DisplayName>SC-temperature-converter</DisplayName>
+  <Properties/>
+  <Request clearPayload="true" variable="tempConverterRequest">
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <Set>
+      <Headers>
+        <Header name="Content-Type">text/xml; charset=utf-8</Header>
+      </Headers>
+      <Payload contentType="text/xml">
+        <soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+          <soap12:Body>
+            <CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/">
+              <Celsius>{apigee.temperature}</Celsius>
+            </CelsiusToFahrenheit>
+          </soap12:Body>
+        </soap12:Envelope>
+      </Payload>
+      <Verb>POST</Verb>
+    </Set>
+  </Request>
+  <Response>calloutResponseTempConverter</Response>
+  <Timeout>10000</Timeout>
+  <HTTPTargetConnection>
+    <Properties/>
+    <URL>https://www.w3schools.com/xml/tempconvert.asmx</URL>
+  </HTTPTargetConnection>
+</ServiceCallout>

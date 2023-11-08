@@ -1,0 +1,16 @@
+<APIProxy revision="4" name="Mock-Target-API">
+    <DisplayName></DisplayName>
+    <Description>OpenAPI Specification for the Apigee mock target service endpoint.</Description>
+    <CreatedAt>1697013385316</CreatedAt>
+    <LastModifiedAt>1697013385316</LastModifiedAt>
+    <BasePaths>/mock-target-api</BasePaths>
+    <Policies>
+        <Policy>XML-to-JSON-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

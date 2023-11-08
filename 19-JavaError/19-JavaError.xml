@@ -1,0 +1,16 @@
+<APIProxy revision="1" name="19-JavaError">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742348406</CreatedAt>
+    <LastModifiedAt>1695742348406</LastModifiedAt>
+    <BasePaths>/javaerror</BasePaths>
+    <Policies>
+        <Policy>Java-Callout-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>java://wit-apigee-tools.jar</Resource>
+    </Resources>
+</APIProxy>

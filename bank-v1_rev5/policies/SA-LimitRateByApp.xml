@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SpikeArrest name="SA-LimitRateByApp">
+  <Rate>5pm</Rate>
+  <Identifier ref="client_id"/>
+  <UseEffectiveCount>true</UseEffectiveCount>
+</SpikeArrest>

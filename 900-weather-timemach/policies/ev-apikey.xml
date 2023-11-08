@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="ev-apikey">
+  <DisplayName>ev-apikey</DisplayName>
+  <Properties/>
+  <URIPath name="name"/>
+  <QueryParam name="lat">
+    <Pattern>{lat}</Pattern>
+  </QueryParam>
+  <QueryParam name="lon">
+    <Pattern>{lon}</Pattern>
+  </QueryParam>
+  <QueryParam name="apikey">
+    <Pattern>{apikey}</Pattern>
+  </QueryParam>
+  <Header name="name"/>
+  <FormParam name="name"/>
+  <Variable name="name"/>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <JSONPayload>
+    <Variable name="name">
+      <JSONPath>{example}</JSONPath>
+    </Variable>
+  </JSONPayload>
+  <Source clearPayload="false">request</Source>
+  <VariablePrefix>apigee</VariablePrefix>
+  <XMLPayload stopPayloadProcessing="false">
+    <Namespaces/>
+    <Variable name="name" type="boolean">
+      <XPath>//test/example</XPath>
+    </Variable>
+  </XMLPayload>
+</ExtractVariables>

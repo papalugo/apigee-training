@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="Assign-Message-1">
+  <DisplayName>Assign Message-1</DisplayName>
+  <Properties/>
+  <Set>
+    <Headers/>
+    <QueryParams/>
+    <FormParams/>
+    <Verb>POST</Verb>
+    <Payload contentType="application/json">
+            {
+                "username":"{request.queryparam.username}",
+                "password": "{request.queryparam.passowrd}"
+            }
+         </Payload>
+    <Path/>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

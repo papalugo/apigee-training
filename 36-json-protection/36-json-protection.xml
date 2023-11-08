@@ -1,0 +1,13 @@
+<APIProxy revision="1" name="36-json-protection">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695825049845</CreatedAt>
+    <LastModifiedAt>1695825263512</LastModifiedAt>
+    <BasePaths>/json-protection</BasePaths>
+    <Policies>
+        <Policy>JSONTP-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SpikeArrest continueOnError="false" enabled="true" name="SA-1">
+    <DisplayName>SA-1</DisplayName>
+    <Properties/>
+    <Identifier ref="request.header.some-header-name"/>
+    <MessageWeight ref="request.header.weight"/>
+    <UseEffectiveCount>true</UseEffectiveCount>
+    <Rate>600pm</Rate>
+</SpikeArrest>

@@ -1,0 +1,18 @@
+<APIProxy revision="1" name="15-proxy1-flow-callout">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742229266</CreatedAt>
+    <LastModifiedAt>1695742229266</LastModifiedAt>
+    <BasePaths>/proxy1-flow-callout</BasePaths>
+    <Policies>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>Extract-Variables-1</Policy>
+        <Policy>Flow-Callout-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

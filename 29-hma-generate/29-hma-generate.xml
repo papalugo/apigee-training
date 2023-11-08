@@ -1,0 +1,15 @@
+<APIProxy revision="6" name="29-hma-generate">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695807459960</CreatedAt>
+    <LastModifiedAt>1695807459960</LastModifiedAt>
+    <BasePaths>/hma-generate</BasePaths>
+    <Policies>
+        <Policy>HMAC-1</Policy>
+        <Policy>AM-1</Policy>
+        <Policy>AM-2</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

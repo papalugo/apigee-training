@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="constructSOAPMessage">
+    <DisplayName>constructSOAPMessage</DisplayName>
+    <Set>
+        <Headers/>
+        <QueryParams/>
+        <FormParams/>
+        <Verb>POST</Verb>
+        <Payload contentType="text/xml">
+            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">
+                <soapenv:Header/>
+                <soapenv:Body>
+                    <web:NumberToWords>
+                        <web:ubiNum>{apigee.number}</web:ubiNum>
+                    </web:NumberToWords>
+                </soapenv:Body>
+            </soapenv:Envelope>
+        </Payload>
+        <Path/>
+    </Set>
+    <AssignVariable>
+        <Name>name</Name>
+        <Value/>
+        <Ref/>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

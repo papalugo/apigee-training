@@ -1,0 +1,20 @@
+const getRandomInRange = (start, end, fixed) => {
+  return (Math.random() * (end - start) + start).toFixed(fixed);
+};
+
+const generateRandomLatLon = () => {
+  const lat = getRandomInRange(-90, 90, 5);
+  const lon = getRandomInRange(-180, 180, 5);
+
+  if (lat < -90 || lat > 90 || lon < -180 || lon > 180) {
+    throw new Error('Invalid coordinates generated.');
+  }
+
+  return { "lat": lat, "lon": lon };
+};
+
+if (context.flow === 'PROXY_REQ_FLOW') {
+  const coordinates = generateRandomLatLon();
+  context.setVariable('apigee.lat', coordinates.lat);
+  context.setVariable('apigee.lon', coordinates.lon);
+}

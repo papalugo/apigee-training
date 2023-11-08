@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="Extract-Variables-2">
+    <DisplayName>Extract Variables-2</DisplayName>
+    <Properties/>
+    <URIPath name="name"/>
+    <QueryParam name="num1">
+        <Pattern>{number1}</Pattern>
+    </QueryParam>
+    <QueryParam name="num2">
+        <Pattern>{number2}</Pattern>
+    </QueryParam>
+    <Header name="name"/>
+    <FormParam name="name"/>
+    <Variable name="name"/>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="name">
+            <JSONPath>{example}</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">request</Source>
+    <VariablePrefix>apigee</VariablePrefix>
+    <XMLPayload stopPayloadProcessing="false">
+        <Namespaces/>
+        <Variable name="name" type="boolean">
+            <XPath>//test/example</XPath>
+        </Variable>
+    </XMLPayload>
+</ExtractVariables>

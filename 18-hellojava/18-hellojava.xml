@@ -1,0 +1,16 @@
+<APIProxy revision="1" name="18-hellojava">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742331009</CreatedAt>
+    <LastModifiedAt>1695742331009</LastModifiedAt>
+    <BasePaths>/hellojava</BasePaths>
+    <Policies>
+        <Policy>Java-Callout-1</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>java://wit-apigee-tools.jar</Resource>
+    </Resources>
+</APIProxy>

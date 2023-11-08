@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="5" name="bank-v1">
+  <DisplayName/>
+  <Description>SimpleBank read-only API</Description>
+  <CreatedAt>1699379094912</CreatedAt>
+  <LastModifiedAt>1699379104154</LastModifiedAt>
+  <BasePaths>/bank/v1</BasePaths>
+  <BasePaths>/token</BasePaths>
+  <Policies>
+    <Policy>AM-GetSecret</Policy>
+    <Policy>OA-VerifyToken</Policy>
+    <Policy>OA-GenerateToken</Policy>
+    <Policy>RF-InvalidTokenRequest</Policy>
+    <Policy>SA-LimitTokenRate</Policy>
+    <Policy>SA-LimitRateByApp</Policy>
+    <Policy>RF-404NotFound</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+    <ProxyEndpoint>token</ProxyEndpoint>
+  </ProxyEndpoints>
+  <Resources>
+    <Resource>properties://oauth.properties</Resource>
+  </Resources>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>

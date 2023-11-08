@@ -1,0 +1,17 @@
+<APIProxy revision="1" name="10-reverseProxy1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695742059477</CreatedAt>
+    <LastModifiedAt>1695742059477</LastModifiedAt>
+    <BasePaths>/reverseproxy1</BasePaths>
+    <Policies>
+        <Policy>remove_uripath</Policy>
+        <Policy>getuiparam</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

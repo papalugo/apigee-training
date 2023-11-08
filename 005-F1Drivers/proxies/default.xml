@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+  <PreFlow name="PreFlow">
+    <Request>
+      <Step>
+        <Name>SC-get-drivers</Name>
+      </Step>
+    </Request>
+    <Response/>
+  </PreFlow>
+  <Flows/>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPProxyConnection>
+    <BasePath>/005-f1-drivers</BasePath>
+  </HTTPProxyConnection>
+  <RouteRule name="noroute"/>
+</ProxyEndpoint>

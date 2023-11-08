@@ -1,0 +1,13 @@
+<APIProxy revision="1" name="02-sampleapi1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695740992050</CreatedAt>
+    <LastModifiedAt>1695740992050</LastModifiedAt>
+    <BasePaths>/v1</BasePaths>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

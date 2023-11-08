@@ -1,0 +1,14 @@
+<APIProxy revision="1" name="07-flow-variable-1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695741107265</CreatedAt>
+    <LastModifiedAt>1695741107265</LastModifiedAt>
+    <BasePaths>/flow-variable-1</BasePaths>
+    <Policies>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>Assign-Message-2</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>

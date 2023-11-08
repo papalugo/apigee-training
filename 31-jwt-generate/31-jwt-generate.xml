@@ -1,0 +1,15 @@
+<APIProxy revision="3" name="31-jwt-generate">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1695809531079</CreatedAt>
+    <LastModifiedAt>1695809531079</LastModifiedAt>
+    <BasePaths>/jwt-generate</BasePaths>
+    <Policies>
+        <Policy>JWT-1</Policy>
+        <Policy>AM-1</Policy>
+        <Policy>AM-2</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+</APIProxy>
